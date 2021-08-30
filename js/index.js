@@ -134,3 +134,7 @@ nav.forEach(item => item.style.color = "green");
 const careers = contact.cloneNode(true);
 careers.textContent = 'Careers';
 document.querySelector('nav').appendChild(careers);
+
+const partners = contact.cloneNode(true);
+partners.textContent = 'Partners';
+document.querySelector('nav').prepend(partners);
