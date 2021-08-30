@@ -40,3 +40,32 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// Grabbing nav items 
+const services = document.querySelector('nav a:nth-of-type(1)');
+const product = document.querySelector('nav a:nth-of-type(2)');
+const vision = document.querySelector('nav a:nth-of-type(3)');
+const features = document.querySelector('nav a:nth-of-type(4)');
+const about = document.querySelector('nav a:nth-of-type(5)');
+const contact = document.querySelector('nav a:nth-of-type(6)');
+
+// Updating nav items
+services.textContent = siteContent["nav"]["nav-item-1"];
+product.textContent = siteContent["nav"]["nav-item-2"];
+vision.textContent = siteContent["nav"]["nav-item-3"];
+features.textContent = siteContent["nav"]["nav-item-4"];
+about.textContent = siteContent["nav"]["nav-item-5"];
+contact.textContent = siteContent["nav"]["nav-item-6"];
+
+//img src
+const logoImg = document.querySelector('#logo-img');
+logoImg.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// Grabbing cta items
+const headerTxt = document.querySelector('h1');
+const headerBttn = document.querySelector('.cta button');
+
+
+headerTxt.textContent = siteContent["cta"]["h1"];
+headerBttn.textContent = siteContent["cta"]["button"];
