@@ -68,7 +68,11 @@ const headerBttn = document.querySelector('.cta button');
 const ctaImg = document.querySelector('#cta-img');
 
 // Updating cta items
-headerTxt.textContent = siteContent["cta"]["h1"];
+// headerTxt.textContent = siteContent["cta"]["h1"];
+const headerArray = siteContent["cta"]["h1"].split(" ");
+headerTxt.innerHTML = `${headerArray[0]} <br> ${headerArray[1]} <br> ${headerArray[2]}`;
+
+
 headerBttn.textContent = siteContent["cta"]["button"];
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
